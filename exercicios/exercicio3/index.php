@@ -23,26 +23,17 @@
     </form>
 
     <?php
-        if (isset($_GET['numero'])) {
-            if (empty($_GET['numero'])) {
-                echo 'O número é obrigatório!';
-                exit();
-            }
-        } else {
-            exit();
-        }
-
         $numero= $_GET['numero'];
 
         if ($numero > 100 ){
             echo "O número é maior que 100.";
-        }else if ($numero <=0 && $numero < 100){
+
+        }else if ($numero < 100){
             echo "O número é menor que 100.";
 
         }else{
             echo "O número é igual a 100.";
         }
-
     ?>
     
 </body>

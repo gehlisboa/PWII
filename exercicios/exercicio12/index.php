@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulários</title>
+    <title>Exercicio 12</title>
 </head>
 <body>
 
     <form action="index.php" method="get">
 
         <fieldset>
-            <legend>Calculadora Científica</legend>
+            <legend>Operadores Matemáticos</legend>
             <label for="valor1">Valor 1</label>
             <input type="text" name="valor1" id="valor1" placeholder="0" required>
 
+            <br>
             <br>
 
             <label for="valor2">Valor 2</label>
             <input type="text" name="valor2" id="valor2" placeholder="0" required>
             
             <br>
+            <br>
 
             <input type="submit" name="somar" value="+">
             <input type="submit" name="subtrair" value="-">
-            <input type="submit" name="dividir" value="/">
             <input type="submit" name="multiplicar" value="*">
+            <input type="submit" name="dividir" value="/">
         </fieldset>
             
     </form>
@@ -48,17 +50,21 @@
             exit();
         }
 
-        if (isset($_GET['somar']))
+        if (isset($_GET['somar'])) {
             echo $_GET['valor1'] + $_GET['valor2'];
+        }
 
-        if (isset($_GET['subtrair']))
+        if (isset($_GET['subtrair'])) {
             echo $_GET['valor1'] - $_GET['valor2'];
+        }
 
-        if (isset($_GET['dividir']))
-            echo $_GET['valor1'] / $_GET['valor2'];
-
-        if (isset($_GET['multiplicar']))
+        if (isset($_GET['multiplicar'])) {
             echo $_GET['valor1'] * $_GET['valor2'];
+        }
+
+        if (isset($_GET['dividir'])) {
+            echo $_GET['valor1'] / $_GET['valor2'];
+        }
     ?>
     
 </body>
