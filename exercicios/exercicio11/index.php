@@ -10,9 +10,9 @@
     <form action="index.php" method="get">
 
         <fieldset>
-            <legend>Triângulo</legend>
-            <label for="ladoA">Lado A:</label>
-            <input type="text" name="ladoA" id="ladoA" placeholder="0" required>
+            <legend>Triângulos</legend>
+            <label for="LadoA">Lado A:</label>
+            <input type="text" name="LadoA" id="ladoA" placeholder="0" required>
 
             <br>
             <br>
@@ -35,37 +35,33 @@
     </form>
 
     <?php
-      
-
-      if (isset($_GET['LadoA'])) {
-        if (empty($_GET['LadoA'])) {
-            echo 'É obrigatório informar os lados!';
-            exit();
-        }
-    } else {
-        exit();
-    }
-
-        $a = $_GET['LadoA'];
-        $b = $_GET['LadoB'];
-        $c = $_GET['LadoC'];
-      
-      
-        if ($a == $b || $a == $c || $b == $c) {
-            echo "Triângulo isósceles";
-
-          }else if ($a <> $b || $b <> $c){
-            echo "Triângulo escaleno";
-
-          }else if ($a == $b && $b == $c){
-            echo "Triângulo equilátero";
-
-          }else{
-            echo "Os valores informados não formam um triângulo.";
-          }               
-            
-?>
-        
     
+          if (isset($_GET['LadoA'], $_GET['LadoB'], $_GET['LadoC'])) {
+
+              $a = $_GET['LadoA'];
+              $b = $_GET['LadoB'];
+              $c = $_GET['LadoC'];
+      
+              $a = floatval($a);
+              $b = floatval($b);
+              $c = floatval($c);
+      
+              if (($a + $b > $c) && ($a + $c > $b) && ($b + $c > $a)) {
+                  
+                  if ($a == $b && $b == $c) {
+                      echo "Triângulo Equilátero";
+
+                  } else if ($a == $b || $a == $c || $b == $c) {
+                      echo "Triângulo Isósceles";
+
+                  } else {
+                      echo "Triângulo Escaleno";
+                  }
+      
+              } else {
+                  echo "Os valores informados não formam um triângulo.";
+              }
+          }
+          ?>
 </body>
 </html>
