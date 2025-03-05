@@ -30,6 +30,8 @@
 
     <?php
 
+    if (isset($_GET['usuario'], $_GET['senha'])) {
+
     $usuario_correto = "Admin";
     $senha_correta = "123";
 
@@ -41,7 +43,7 @@
     }else {
     echo "Acesso negado! Usuário ou senha incorretos!";
     }
-
+   }
     ?>
 
             

@@ -23,6 +23,16 @@
     </form>
 
     <?php
+
+       if (isset($_GET['numero'])) {
+        if (empty($_GET['numero'])) {
+            echo 'É obrigatório! preencher esse campo';
+            exit();
+        }
+    } else {
+        exit();
+    }
+
         $numero= $_GET['numero'];
 
         if ($numero > 100 ){

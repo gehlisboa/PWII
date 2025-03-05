@@ -32,6 +32,9 @@
     </form>
 
     <?php
+
+     if (isset($_GET['n1'], $_GET['n2'], $_GET['n3'])) {
+
        $n1 = $_GET['n1'];
        $n2 = $_GET['n2'];
        $n3 = $_GET['n3'];
@@ -40,8 +43,10 @@
        if ($n2 > $n3) { $aux = $n2; $n2 = $n3; $n3 = $aux; }
        if ($n1 > $n2) { $aux = $n1; $n1 = $n2; $n2 = $aux; }
    
-       echo "$n1, $n2, $n3";
+       echo "$n1, $n2, $n3"; 
+    }
    ?>
+   
     
 </body>
 </html>

@@ -26,7 +26,7 @@
                 if (isset($_GET['mes'])) {
                 $mes = strtolower($_GET['mes']); 
             
-                if ($mes == "janeiro" || $mes == "fevereiro" || $mes == "março" || 
+                if ($mes == "janeiro" || $mes == "fevereiro" || $mes == "marco" || 
                     $mes == "abril" || $mes == "maio" || $mes == "junho") {
                     echo "Esse mês faz parte do primeiro semestre.";
 

@@ -17,7 +17,7 @@
             <br> 
             <br>
 
-            <input type="submit" name="resultado" value="Resultado">
+            <input type="submit" name="Verificar" value="Verificar">
         </fieldset>
             
     </form>
