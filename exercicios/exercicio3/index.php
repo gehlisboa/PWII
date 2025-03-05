@@ -26,7 +26,7 @@
 
        if (isset($_GET['numero'])) {
         if (empty($_GET['numero'])) {
-            echo 'É obrigatório! preencher esse campo';
+            echo 'O número é obrigatório!';
             exit();
         }
     } else {
