@@ -23,6 +23,7 @@
     </form>
 
     <?php
+    
         if (isset($_GET['nota'])) {
             if (empty($_GET['nota'])) {
                 echo 'A nota é obrigatório!';
@@ -43,9 +44,6 @@
         }else{
             echo "Você foi aprovado.";
         }
-           
-             
-        
        
     ?>
     
