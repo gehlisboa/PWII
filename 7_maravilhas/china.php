@@ -9,25 +9,25 @@
         <div class="row">
             <div class="cow-3">
                 <div class="card">
-                    <img style = widght 100% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqrnBKipdqtLgmrznqbEGC5cSGQ24IH24flA&s" alt="">
+                    <img style = widght 50% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOX_z32vWvv8GJo5WFBXECbg2OY7M0HPeDA&s" alt="">
                 </div>
             </div>
 
             <div class="cow-3">
                 <div class="card">
-                    <img style = widght 100% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqrnBKipdqtLgmrznqbEGC5cSGQ24IH24flA&s" alt="">
+                    <img style = widght 50% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOX_z32vWvv8GJo5WFBXECbg2OY7M0HPeDA&s" alt="">
                 </div>
             </div>
 
             <div class="cow-3">
                 <div class="card">
-                    <img style = widght 100% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqrnBKipdqtLgmrznqbEGC5cSGQ24IH24flA&s" alt="">
+                    <img style = widght 50% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOX_z32vWvv8GJo5WFBXECbg2OY7M0HPeDA&s" alt="">
                 </div>
             </div>
 
             <div class="cow-3">
                 <div class="card">
-                    <img style = widght 100% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqrnBKipdqtLgmrznqbEGC5cSGQ24IH24flA&s" alt="">
+                    <img style = widght 50% src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOX_z32vWvv8GJo5WFBXECbg2OY7M0HPeDA&s" alt="">
                 </div>
             </div>
             
