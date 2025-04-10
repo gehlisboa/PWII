@@ -1,15 +1,18 @@
-<?php
-$num=[0,7,7,8,9,87,7,6,,6,89,8,]
-$igual0=0;
-$diferente=0;
- foreach ($num as $key => $value) {
-    if($value==0){
-        $igual0++
-    }
-    else{
-        $diferente++
-    }
- }
- echo "o jdhfnhdgsft".$igual0."uesryserfbksug"
 
+ <?php
+	$numeros = [5,-5,1,-22,25,-15,15,-30,25,-2];
+	$numIgual = 0;
+    $numDiferente = 0;
+
+    foreach ($numeros as $key => $value) {
+        
+        if ($value == 0) {
+            $numIgual++;
+        } else {
+           $numDiferente++;
+        }
+    };
+ 
+        echo "Existem ${numIgual} iguais a 0 e ${numDiferente} números diferentes de 0.";
+?>
 ?>
