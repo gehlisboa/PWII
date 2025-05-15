@@ -22,4 +22,6 @@ $stmt = $pdo->prepare('INSERT INTO usuario (username, password) VALUES (:usernam
 $stmt->bindParam(':username', $username);
 $stmt->bindParam(':password', $password);
 $stmt->execute();
+
+Header("Location: read.php");
 ?>
