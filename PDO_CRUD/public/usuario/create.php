@@ -1,17 +1,27 @@
 <?php
 // ../ volta ao nível para encontrar os arquivos nas pastas
+    include '../../includes/header.php'; 
+    include '../../includes/menu.php';
     include '../../config/connection.php';
-?>
+?> 
 
-<form action="create.php" method="POST">
-    <label for="username">Nome de usuário</label>
-    <input type="text" name="username" id="username">
-    <br><br>
-    <label for="password">Senha</label>
-    <input type="password" name="password" id="password">
-    <br><br>
-    <button type="submit">Cadastrar</button>
-</form>
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-8 p-5 border shadow rounded">
+    <form action="create.php" method="POST">
+    <div class="mb-3">
+        <label for="username" class="form-label">Nome de usuário</label>
+    <input type="text" name="username" id="username" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+    <input type="password" name="password" id="password" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-dark">Cadastrar</button>
+     </form>
+        </div>
+    </div>
+</div>
 
 <?php
 $username = isset($_POST['username']) ? $_POST['username'] : exit() ;
@@ -25,3 +35,5 @@ $stmt->execute();
 
 Header("Location: read.php");
 ?>
+
+<?php include '../../includes/footer.php'; ?>

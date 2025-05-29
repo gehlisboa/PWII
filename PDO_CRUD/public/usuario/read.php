@@ -1,5 +1,7 @@
 <?php
-    include '../../config/connection.php';
+   include '../../includes/header.php';
+   include '../../includes/menu.php';
+   include '../../config/connection.php';
 
     $stmt = $pdo->query('SELECT * FROM usuario');
     $usuarios = $stmt->fetchAll();
@@ -14,6 +16,8 @@
     <a href="http://localhost/PWII/PDO_CRUD/public/usuario/update.php?id= <?php echo $user['id']; ?>" >Editar</a>
     <hr>
 <?php } ?>
+
+<?php include '../../includes/footer.php'; ?>
 
 
 
