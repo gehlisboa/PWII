@@ -1,13 +1,73 @@
 <?php
-// ../ volta ao nível para encontrar os arquivos nas pastas
-    include '../includes/header.php'; 
-    include '../includes/menu.php';
-    include '../config/connection.php';
+include '../includes/header.php'; 
+include '../includes/menu.php';
+include '../config/connection.php';
 ?> 
+
+<style>
+    body {
+        background-color: #111;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    label {
+        color: rgb(206, 206, 255);
+    }
+
+    .form-control {
+        background-color: #111;
+        color: white;
+        border: 1px solid #888;
+    }
+
+    .form-control:focus {
+        background-color: #1a1a1a;
+        color: white;
+        box-shadow: 0 0 0 0.2rem rgba(206, 206, 255, 0.2);
+    }
+
+    .btn-dark {
+        background-color: rgb(206, 206, 255);
+        color: #111;
+        font-weight: bold;
+        border: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-dark:hover {
+        background-color: white;
+        color: #111;
+    }
+
+    .form-container {
+        margin-top:30px;
+        margin-bottom:30px;
+        background-color: #1e1e26;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+    }
+
+    .form-label {
+        font-weight: 500;
+        font-weight:bold;
+}
+    
+
+    h2.title-form {
+        color: white;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+}
+    
+
+</style>
 
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-lg-8 p-5 border shadow rounded">
+        <div class="col-12 col-lg-8 p-5 form-container">
+            <h2 class="title-form">CADASTRAR NOVO VEÍCULO</h2>
             <form action="" method="POST">
                 <div class="mb-3">
                     <label for="titulo_anuncio" class="form-label">Título do anúncio</label>
@@ -67,8 +127,6 @@ $placa = isset($_POST['placa_veiculo']) ? $_POST['placa_veiculo'] : exit();
 $proprietario = isset($_POST['nome_proprietario']) ? $_POST['nome_proprietario'] : exit();
 $telefone = isset($_POST['telefone_proprietario']) ? $_POST['telefone_proprietario'] : exit();
 
-
-// statement
 $stmt = $pdo->prepare('INSERT INTO anuncios (
     titulo_anuncio, descricao_anuncio, data_publicacao,
     marca_veiculo, modelo_veiculo, ano_veiculo,
@@ -91,4 +149,5 @@ $stmt->execute();
 
 Header("Location: read-anuncio.php");
 ?>
+
 <?php include '../includes/footer.php'; ?>
