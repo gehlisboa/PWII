@@ -44,5 +44,9 @@
         $stmt->execute();
      }
     
+     
+        public function login(){ }
+
+        public function input(){ }
  }
 ?>

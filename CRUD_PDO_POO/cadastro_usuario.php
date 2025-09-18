@@ -41,5 +41,12 @@
     </div>
 </div>
 
+  <?php
+    $usuario = new Usuario();
+
+    $usuario->inserir($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['confirmar_senha'], $_POST['tipo'],);
+    echo var_dump($_POST['nome']);
+    ?>
+
 
 <?php include 'footer.php'; ?>
